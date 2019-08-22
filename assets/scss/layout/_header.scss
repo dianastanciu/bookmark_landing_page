@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: #{$logo-padding-vert} 0;
+  padding: 15px 0;
 }
 
 .nav {
@@ -11,7 +11,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba($color-dark-blue, .85);
+    background: rgba($color-dark-blue, 0.94);
     color: $text-light;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: #{$logo-padding-vert} 15px;
+    padding: 30px 15px 35px;
   }
 
   &__items {
@@ -36,19 +36,21 @@
     width: 90%;
     text-transform: uppercase;
 
-    > * {
-      border-top: 1px solid rgba(255,255,255,.3);
-    }
-
     * {
       width: 100%;
       display: block;
     }
+  }
 
-    a {
-      padding: 15px 0;
-      text-align: center;
-    }
+  &__item {
+    border-top: 1px solid rgba(255,255,255,.3);
+    font-size: 20px;
+    letter-spacing: 0.13em;
+  }
+
+  &__link {
+    padding: 25px 0;
+    text-align: center;
   }
 
   &__social {
@@ -58,8 +60,9 @@
     flex: 0.3;
     width: 100%;
 
-    > * {
-      padding-left: 10px;
+  
+    a {
+      padding: 20px;
     }
   }
 }
