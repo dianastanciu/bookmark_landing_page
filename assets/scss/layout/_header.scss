@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: #{$logo-padding-vert} 0;
+}
+
+.nav {
+  &__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba($color-dark-blue, .85);
+    color: $text-light;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: #{$logo-padding-vert} 15px;
+  }
+
+  &__items {
+
+  }
+}
