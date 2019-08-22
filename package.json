@@ -1,0 +1,34 @@
+{
+  "name": "bookmark_landing_page",
+  "version": "1.0.0",
+  "description": "Landing page challenge by frontendmentor.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dianastanciu/bookmark_landing_page.git"
+  },
+  "keywords": [
+    "landing",
+    "page",
+    "html",
+    "css",
+    "javascript",
+    "intermediate",
+    "frontend",
+    "challenge"
+  ],
+  "author": "Diana Stanciu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dianastanciu/bookmark_landing_page/issues"
+  },
+  "homepage": "https://github.com/dianastanciu/bookmark_landing_page#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
