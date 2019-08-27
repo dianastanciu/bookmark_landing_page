@@ -1,0 +1,45 @@
+.hero {
+  margin-top: 50px;
+
+  &__img {
+    position: relative;
+    
+    img {
+      width: 100%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 90%;
+      height: 80%;
+      background: $color-soft-blue;
+      top: 25%;
+      right: -20%;
+      border-bottom-left-radius: 35%;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 0.85em;
+    line-height: 1.5;
+    color: #B4B5B9;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+}

@@ -12,21 +12,21 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="header__logo">
+      <a href="/" tabindex="1" class="header__logo">
           <img src="assets/img/logo-bookmark.svg" alt="Bookmark Logo">
-      </div>
+      </a>
       <nav class="nav">
-        <img src="assets/img/icon-hamburger.svg"  alt="Menu Icon" class="nav__icon nav__open">
+        <div tabindex="2" class="nav__icon_menu nav__open"><img src="assets/img/icon-hamburger.svg"  alt="Menu Icon" class="nav__icon"></div>
         <div class="nav__list">
           <ul class="nav__header">
-            <li><img src="assets/img/logo-bookmark-white.svg" alt="Bookmark Logo"></li>
-            <li><img src="assets/img/icon-close.svg"  alt="Menu Icon" class="nav__icon nav__close"></li>
+            <li tabindex="1"><a href="/" class="nav__logo"><img src="assets/img/logo-bookmark-white.svg" alt="Bookmark Logo"></a></li>
+            <li tabindex="1"><a href="#" class="nav__close"><img src="assets/img/icon-close.svg"  alt="Menu Icon" class="nav__icon"></a></li>
           </ul>
           <ul class="nav__items">
             <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
-                                                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            <li class="nav__item"><a href="#" class="nav__link bk__button">Login</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="#" class="nav__link bk__button bk__button--bordered">Login</a></li>
           </ul>
           <ul class="nav__social">
             <li><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
@@ -38,7 +38,21 @@
 
     <main>
       <div class="hero">
-        <img src="assets/img/illustration-hero.svg" alt="Bookmark Hero Image" class="hero__img">
+        <div class="hero__img">
+          <img src="assets/img/illustration-hero.svg" alt="Bookmark Hero Image">
+        </div>
+        
+        <h1 class="hero__title">A Simple Bookmark Manager</h1>
+
+        <div class="hero__subtitle">
+          A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.
+        </div>
+
+        <div class="hero__cta">
+          <a href="#" class="bk__button bk__button--default bk__button--emphasized">Get it on Chrome</a>
+          <a href="#" class="bk__button bk__button--default">Get it on Firefox</a>
+        </div>
       </div>  
     </main>
   </div>

@@ -2,6 +2,12 @@
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
 }
 
 .nav {
@@ -27,9 +33,22 @@
       height: 100vh;
       opacity: 1;
       visibility: visible;
+      z-index: 1;
     }
   }
 
+  &__logo {
+    display: block;
+    padding: 5px 10px;
+  }
+
+  &__close {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &__header {
     display: flex;
@@ -77,5 +96,21 @@
       align-items: center;
       justify-content: center;
     }
+
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__icon_menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
