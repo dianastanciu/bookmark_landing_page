@@ -1,0 +1,17 @@
+.bk {
+    &__title {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 1.4em;
+        text-align: center;
+    }
+    
+    &__subtitle {
+        font-size: 0.85em;
+        line-height: 1.5;
+        color: #B4B5B9;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
