@@ -1,0 +1,46 @@
+.accordion {
+  font-family: inherit;
+  font-size: 0.9em;
+  margin: 2em 0;
+
+  &__header {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    display: flex !important;
+    justify-content: space-between;
+    padding: 1.5em 0.7em 1.5em 0.7em !important;
+
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-soft-blue;
+      transition: all .5s ease;
+      transform-origin: center;
+    }
+
+    &.active {
+      color: $text-dark;
+      border-bottom: 0;
+
+      i {
+        transform: rotate(180deg);
+        color: $color-soft-red;
+      }
+    }
+
+    @include hover() {
+       outline: 1px dotted $color-grayish-blue;
+    }
+  }
+
+  &__content {
+    margin: 0;
+    width: 100%;
+    border: 0;
+    text-align: left;
+    padding: 1em !important;
+    line-height: 2;
+  }
+}

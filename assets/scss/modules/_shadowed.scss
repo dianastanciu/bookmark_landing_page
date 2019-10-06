@@ -1,0 +1,33 @@
+.bk {
+  &__shadowed {
+    position: relative;
+    margin-bottom: 25%;
+
+    img {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 90%;
+      height: 80%;
+      background: $color-soft-blue;
+      top: 25%;
+      right: -20%;
+      border-bottom-left-radius: 35%;
+      z-index: -1;
+    }
+
+    &--reverse::after {
+      left: -25%;
+      bottom: -20%;
+      top: auto;
+      right: auto;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 35%;
+    }
+  }
+}

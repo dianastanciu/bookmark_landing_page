@@ -1,92 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <title>Bookmark Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Bookmark Landing Page</title>
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <header class="header">
-      <a href="/" tabindex="1" class="header__logo">
-          <img src="assets/img/logo-bookmark.svg" alt="Bookmark Logo">
-      </a>
-      <nav class="nav">
-        <div tabindex="2" class="nav__icon_menu nav__open"><img src="assets/img/icon-hamburger.svg"  alt="Menu Icon" class="nav__icon"></div>
-        <div class="nav__list">
-          <ul class="nav__header">
-            <li tabindex="1"><a href="/" class="nav__logo"><img src="assets/img/logo-bookmark-white.svg" alt="Bookmark Logo"></a></li>
-            <li tabindex="1"><a href="#" class="nav__close"><img src="assets/img/icon-close.svg"  alt="Menu Icon" class="nav__icon"></a></li>
-          </ul>
-          <ul class="nav__items">
-            <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            <li class="nav__item"><a href="#" class="nav__link bk__button bk__button--bordered">Login</a></li>
-          </ul>
-          <ul class="nav__social">
-            <li><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
-          </ul>
-        </div>
-      </nav>
+        <a href="/" tabindex="1" class="header__logo">
+            <img src="assets/img/logo-bookmark.svg" alt="Bookmark Logo">
+        </a>
+        <nav class="nav">
+            <div tabindex="2" class="nav__icon_menu nav__open"><img src="assets/img/icon-hamburger.svg"  alt="Menu Icon" class="nav__icon"></div>
+            <div class="nav__list">
+                <ul class="nav__header">
+                    <li tabindex="1"><a href="/" class="nav__logo"><img src="assets/img/logo-bookmark-white.svg" alt="Bookmark Logo"></a></li>
+                    <li tabindex="1"><a href="#" class="nav__close"><img src="assets/img/icon-close.svg"  alt="Menu Icon" class="nav__icon"></a></li>
+                </ul>
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link bk__button bk__button--bordered">Login</a></li>
+                </ul>
+                <ul class="nav__social">
+                    <li><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
-      <div class="hero">
-        <div class="hero__img">
-          <img src="assets/img/illustration-hero.svg" alt="Bookmark Hero Image">
+        <div class="hero">
+            <div class="hero__img">
+                <img src="assets/img/illustration-hero.svg" alt="Bookmark Hero Image">
+            </div>
+
+            <h1 class="bk__title">A Simple Bookmark Manager</h1>
+
+            <div class="bk__subtitle">
+                A clean and simple interface to organize your favourite websites. Open a new
+                browser tab and see your sites load instantly. Try it for free.
+            </div>
+
+            <div class="bk__cta">
+                <a href="#" class="bk__button bk__button--default bk__button--emphasized">Get it on Chrome</a>
+                <a href="#" class="bk__button bk__button--default">Get it on Firefox</a>
+            </div>
         </div>
-        
-        <h1 class="bk__title">A Simple Bookmark Manager</h1>
 
-        <div class="bk__subtitle">
-          A clean and simple interface to organize your favourite websites. Open a new 
-          browser tab and see your sites load instantly. Try it for free.
+        <div class="bk__section">
+            <h2 class="bk__title">Features</h2>
+            <div class="bk__subtitle">Our aim is to make it quick and easy for you to access your favourite websites.
+                Your bookmarks sync between your devices so you can access them on the go.</div>
+
+            <ul class="bk__nav-pills nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-bookmarking-tab" data-toggle="pill" href="#pills-bookmarking"
+                       role="tab" aria-controls="pills-bookmarking" aria-selected="true">
+                        Simple Bookmarking
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-searching-tab" data-toggle="pill" href="#pills-searching"
+                       role="tab" aria-controls="pills-searching" aria-selected="false">
+                        Simple Searching
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-sharing-tab" data-toggle="pill" href="#pills-sharing" role="tab"
+                       aria-controls="pills-sharing" aria-selected="false">
+                        Easy Sharing
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="row tab-pane fade show active" id="pills-bookmarking" role="tabpanel" aria-labelledby="pills-bookmarking-tab">
+                    <div class="col-sm-6">
+                        <div class="bk__shadowed bk__shadowed--reverse">
+                            <img src="assets/img/illustration-features-tab-1.svg" alt="bookmarking image">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2 class="bk__title">Bookmark in one click</h2>
+                        <div class="bk__subtitle">Organize your bookmarks however you like. Our simple drag-and-drop interface
+                            gives you complete control over how you manage your favourite sites.</div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-searching" role="tabpanel" aria-labelledby="pills-searching-tab">
+                    <div class="col-sm-6">
+                        <div class="bk__shadowed bk__shadowed--reverse">
+                            <img src="assets/img/illustration-features-tab-2.svg" alt="searching image">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2 class="bk__title">Intelligent Search</h2>
+                        <div class="bk__subtitle">
+                            Our powerful search feature will help you find saved sites in no time at all.
+                            No need to trawl through all of your bookmarks.
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-sharing" role="tabpanel" aria-labelledby="pills-sharing-tab">
+                    <div class="col-sm-6">
+                        <div class="bk__shadowed bk__shadowed--reverse">
+                            <img src="assets/img/illustration-features-tab-3.svg" alt="sharing image">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2 class="bk__title">Share your bookmarks</h2>
+                        <div class="bk__subtitle">
+                            Easily share your bookmarks and collections with others. Create a shareable
+                            link that you can send at the click of a button.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="bk__cta">
-          <a href="#" class="bk__button bk__button--default bk__button--emphasized">Get it on Chrome</a>
-          <a href="#" class="bk__button bk__button--default">Get it on Firefox</a>
+        <div class="bk__section">
+            <h2 class="bk__title">Download the extension</h2>
+            <div class="bk__subtitle">We’ve got more browsers in the pipeline. Please do let us know if you’ve
+                got a favourite you’d like us to prioritize.</div>
+            
+            <div class="bk__card">
+                <img src="assets/img/logo-chrome.svg" alt="Chrome logo" class="bk__img">
+                <h2 class="bk__title">Add to Chrome</h2>
+                <div class="bk__subtitle">Minimum Version 62</div>
+                <div class="bk__separator"></div>
+                <a href="#" class="bk__button bk__button--default bk__button--emphasized">Add & Install Extension</a>
+            </div>
+
+            <div class="bk__card">
+                <img src="assets/img/logo-firefox.svg" alt="Firefox logo" class="bk__img">
+                <h2 class="bk__title">Add to Firefox</h2>
+                <div class="bk__subtitle">Minimum Version 55</div>
+                <div class="bk__separator"></div>
+                <a href="#" class="bk__button bk__button--default bk__button--emphasized">Add & Install Extension</a>
+            </div>
+
+            <div class="bk__card">
+                <img src="assets/img/logo-opera.svg" alt="Opera logo" class="bk__img">
+                <h2 class="bk__title">Add to Opera</h2>
+                <div class="bk__subtitle">Minimum Version 46</div>
+                <div class="bk__separator"></div>
+                <a href="#" class="bk__button bk__button--default bk__button--emphasized">Add & Install Extension</a>
+            </div>
         </div>
-      </div>
 
-      <div class="bk__section">
-        <h2 class="bk__title">Features</h2>
-        <div class="bk__subtitle">Our aim is to make it quick and easy for you to access your favourite websites. 
-          Your bookmarks sync between your devices so you can access them on the go.</div>
+        <div class="bk__section">
+            <h2 class="bk__title">Frequently asked questions</h2>
+            <div class="bk__subtitle">Here are some of our FAQs. If you have any other questions you’d like
+                answered please feel free to email us.</div>
 
-         
-          
-        
-      </div>
+            <div id="accordion" class="accordion">
+                <h3 class="accordion__header">What is Bookmark?<i class="fas fa-chevron-down"></i></h3>
+                <div class="accordion__content bk__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
 
+                </div>
 
-      <div class="bk__section">
-        <h2 class="bk__title">Bookmark in one click</h2>
-        <div class="bk__subtitle">Organize your bookmarks however you like. Our simple drag-and-drop interface 
-          gives you complete control over how you manage your favourite sites.</div>
-      </div>
+                <h3 class="accordion__header">How can I request a new browser?<i class="fas fa-chevron-down"></i></h3>
+                <div class="accordion__content bk__subtitle">
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+                    Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                    ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                    Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                </div>
 
-      <div class="bk__section">
-        <h2 class="bk__title">Download the extension</h2>
-        <div class="bk__subtitle">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-          got a favourite you’d like us to prioritize.</div>
-      </div>
+                <h3 class="accordion__header">Is there a mobile app?<i class="fas fa-chevron-down"></i></h3>
+                <div class="accordion__content bk__subtitle">
+                    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+                    urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                    sollicitudin ex et ultricies bibendum.
+                </div>
 
-      <div class="bk__section">
-        <h2 class="bk__title">Frequently asked questions</h2>
-        <div class="bk__subtitle">Here are some of our FAQs. If you have any other questions you’d like 
-          answered please feel free to email us.</div>
-      </div>
+                <h3 class="accordion__header">What about other Chromium browsers?<i class="fas fa-chevron-down"></i></h3>
+                <div class="accordion__content bk__subtitle">
+                    Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+                    vitae neque eget nisl gravida pellentesque non ut velit.
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="bk__button bk__button--default bk__button--emphasized bk__button--single">More Info</a>
+            </div>
+        </div>
+
+        <div class="bk__section">
+            <div class="contact">
+                <div class="bk__subtitle">35,000+ already joined</div>
+
+                <h2 class="bk__title">Stay up-to-date with what we’re doing</h2>
+
+                <form novalidate>
+                    <input type="email" id="mail" placeholder="Enter your e-mail address">
+                    <button type="submit" class="btn bk__button bk__button--red">Contact Us</button>
+                    <span class="error" aria-live="polite"></span>
+                </form>
+            </div>
+        </div>
     </main>
-  </div>
-  <script src="assets/vendors/jquery/jquery.min.js"></script>
-  <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/index.js"></script>
+</div>
+<script src="assets/vendors/jquery/jquery.min.js"></script>
+<script src="assets/vendors/jquery/jquery.validate.min.js"></script>
+<script src="assets/vendors/jquery-ui/js/jquery-ui.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/index.js"></script>
 </body>
 </html>

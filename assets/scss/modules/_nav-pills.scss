@@ -1,0 +1,42 @@
+.bk {
+  &__nav-pills {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 15px;
+    text-align: center;
+    padding-bottom: 40px;
+    
+    .nav-link {
+      border-bottom: .05em solid rgba(0,0,0,.3);
+      border-radius: 0;
+      padding: 20px 0;
+      color: rgba(0,0,0,.5);
+      transition: all .5s ease;
+    }
+
+    .nav-link.active {
+      position: relative;
+      background: transparent;
+      color: #000;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 40%;
+        height: 4px;
+        background: #FB5859;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+    }
+
+    .tab-pane {
+      padding-top: 40px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
