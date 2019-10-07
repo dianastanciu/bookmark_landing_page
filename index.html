@@ -31,13 +31,13 @@
 <div class="container">
     <header class="header">
         <a href="/" tabindex="1" class="header__logo">
-            <img src="assets/img/logo-bookmark.svg" alt="Bookmark Logo">
+            <img src="https://res.cloudinary.com/dianastanciu/image/upload/v1570482274/logo-bookmark_xiva21.svg" alt="Bookmark Logo" class="svg">
         </a>
         <nav class="nav">
             <div tabindex="2" class="nav__icon_menu nav__open"><img src="assets/img/icon-hamburger.svg"  alt="Menu Icon" class="nav__icon"></div>
             <div class="nav__list">
                 <ul class="nav__header">
-                    <li tabindex="1"><a href="/" class="nav__logo"><img src="assets/img/logo-bookmark-white.svg" alt="Bookmark Logo"></a></li>
+                    <li tabindex="1"><a href="/" class="nav__logo"><img src="https://res.cloudinary.com/dianastanciu/image/upload/v1570482274/logo-bookmark_xiva21.svg" alt="Bookmark Logo" class="svg"></a></li>
                     <li tabindex="1"><a href="#" class="nav__close"><img src="assets/img/icon-close.svg"  alt="Menu Icon" class="nav__icon"></a></li>
                 </ul>
                 <ul class="nav__items">
@@ -88,7 +88,7 @@
                 <li class="nav-item">
                     <a class="nav-link" id="pills-searching-tab" data-toggle="pill" href="#pills-searching"
                        role="tab" aria-controls="pills-searching" aria-selected="false">
-                        Simple Searching
+                        Speedy Searching
                     </a>
                 </li>
                 <li class="nav-item">
@@ -211,20 +211,43 @@
             </div>
         </div>
 
-        <div class="bk__section">
+        <div class="bk__section mb-0">
             <div class="contact">
                 <div class="bk__subtitle">35,000+ already joined</div>
 
                 <h2 class="bk__title">Stay up-to-date with what we’re doing</h2>
 
                 <form novalidate>
-                    <input type="email" id="mail" placeholder="Enter your e-mail address">
+                    <div class="bk__form-group">
+                        <input required type="email" id="mail" class="bk__input" placeholder="Enter your e-mail address" autocomplete="off">
+                        <label for="mail"></label>
+                        <div class="requirements">Whoops, make sure it's an email!</div>
+                    </div>
                     <button type="submit" class="btn bk__button bk__button--red">Contact Us</button>
                     <span class="error" aria-live="polite"></span>
                 </form>
             </div>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="https://res.cloudinary.com/dianastanciu/image/upload/v1570482274/logo-bookmark_xiva21.svg" alt="Bookmark Logo" class="svg">
+            </div>
+            <div class="footer__nav">
+                <ul>
+                    <li class="footer__item footer__nav_item"><a href="#">Features</a></li>
+                    <li class="footer__item footer__nav_item"><a href="#">Pricing</a></li>
+                    <li class="footer__item footer__nav_item"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <a href="#" class="footer__item footer__social_item"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#" class="footer__item footer__social_item"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
 </div>
 <script src="assets/vendors/jquery/jquery.min.js"></script>
 <script src="assets/vendors/jquery/jquery.validate.min.js"></script>

@@ -1,8 +1,8 @@
 .bk {
   &__card {
-    margin: 20px 10%;
+    margin: 2em 10%;
     border-radius: 30px;
-    box-shadow: 0 2px 12px 4px rgba(0,0,0,0.1);
+    box-shadow: 1px 11px 14px 0 rgba(0,0,0,0.1);
     padding: 20px 30px 40px;
 
     .bk__img {
@@ -13,6 +13,11 @@
 
     .bk__button {
       display: block;
+    }
+
+    .bk__title {
+      margin-bottom: 0.5em;
+      font-size: 1.2em;
     }
   }
 

@@ -1,0 +1,34 @@
+.footer {
+  margin: 0 -15px;
+
+  &__inner {
+    background: $color-dark-blue;
+    color: $text-light;
+    text-align: center;
+    padding: 7%;
+  }
+
+  &__nav {
+    padding: 1em 0;
+  }
+
+  &__nav_item {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+  }
+
+  &__item {
+    padding: .9em 1.5em;
+  }
+
+  &__logo {
+    img {
+      height: 1.6em;
+    }
+
+    path {
+      fill: $text-light;
+    }
+  }
+}

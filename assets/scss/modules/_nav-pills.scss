@@ -7,7 +7,7 @@
     padding-bottom: 40px;
     
     .nav-link {
-      border-bottom: .05em solid rgba(0,0,0,.3);
+      border-bottom: .05em solid rgba(0,0,0,.2);
       border-radius: 0;
       padding: 20px 0;
       color: rgba(0,0,0,.5);
@@ -26,13 +26,17 @@
         height: 4px;
         background: #FB5859;
         left: 50%;
-        bottom: 0;
+        bottom: -1px;
         transform: translateX(-50%);
       }
     }
 
     .tab-pane {
       padding-top: 40px;
+    }
+
+    .nav-item:first-of-type .nav-link {
+      border-top: .05em solid rgba(0,0,0,.2);
     }
   }
 

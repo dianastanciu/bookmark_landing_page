@@ -23,7 +23,11 @@ body {
   position: relative;
 }
 
-a {
+a,
+a:hover,
+a:focus,
+a:active,
+a:link {
   text-decoration: none;
   color: inherit;
 }

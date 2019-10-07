@@ -1,15 +1,16 @@
 .accordion {
   font-family: inherit;
-  font-size: 0.9em;
-  margin: 2em 0;
+  font-size: .9em;
+  margin: 2em .9em;
 
   &__header {
     background: transparent;
     border: 0;
     border-bottom: 1px solid rgba(0,0,0,.2);
+    border-radius: 0;
     display: flex !important;
     justify-content: space-between;
-    padding: 1.5em 0.7em 1.5em 0.7em !important;
+    padding: 1.5em 0 !important;
 
     i {
       display: flex;
@@ -31,7 +32,7 @@
     }
 
     @include hover() {
-       outline: 1px dotted $color-grayish-blue;
+       outline: none;
     }
   }
 
@@ -40,7 +41,9 @@
     width: 100%;
     border: 0;
     text-align: left;
-    padding: 1em !important;
+    padding: 1em 0 !important;
     line-height: 2;
+    font-size: .9em;
+    color: #707070;
   }
 }

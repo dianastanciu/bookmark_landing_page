@@ -1,21 +1,71 @@
 .bk {
+  &__form-group {
+    position: relative;
+    margin-bottom: 1em;
+
+    .requirements {
+      background: $color-soft-red;
+      text-align: left;
+      padding: 3px 10px;
+      border-radius: 0 0 6px 6px;
+      font-size: 0.7em;
+      color: #fff;
+      letter-spacing: .05em;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
   &__input {
-    -webkit-appearance: none;
     width: 100%;
-    border: 1px solid $text-dark;
+    border-radius: 6px;
+    padding: 1em;
+    font-size: 0.9em;
+    color: $color-grayish-blue;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
     margin: 0;
     font-family: inherit;
-    font-size: 90%;
 
+    // When input is...
+    //   1. NOT empty
+    //   2. NOT in focus
+    //   3. NOT valid
+    &:invalid:not(:focus):not(:placeholder-shown) {
+      // Show a light reminder
+      background: pink;
+      & + label {
+        opacity: 0;
+      }
+    }
 
-    &:invalid{
-      border-color: $color-soft-red;
-      background-color: $text-light;
+    // When that invalid input becomes in focus (and also still isn't empty)
+    &:invalid:focus:not(:placeholder-shown) {
+      // Show the more robust requirement instructions below.
+      & ~ .requirements {
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+      }
     }
 
     &:focus:invalid {
       outline: none;
     }
+
+    &:focus + label {
+      opacity: 0;
+    }
+  }
+
+  &__label {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
