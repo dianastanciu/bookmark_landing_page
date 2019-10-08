@@ -219,9 +219,14 @@
 
                 <form novalidate>
                     <div class="bk__form-group">
-                        <input required type="email" id="mail" class="bk__input" placeholder="Enter your e-mail address" autocomplete="off">
-                        <label for="mail"></label>
-                        <div class="requirements">Whoops, make sure it's an email!</div>
+                        <input type="email" required
+                               data-value-missing="This field is required!"
+                               placeholder="Enter your e-mail address"
+                               autocomplete="off"
+                               id="mail"
+                               class="bk__input">
+                        <label for="mail" class="bk__label"></label>
+                        <div class="requirement requirement--error">Whoops, make sure it's an e-mail!</div>
                     </div>
                     <button type="submit" class="btn bk__button bk__button--red">Contact Us</button>
                     <span class="error" aria-live="polite"></span>
@@ -250,7 +255,6 @@
     </footer>
 </div>
 <script src="assets/vendors/jquery/jquery.min.js"></script>
-<script src="assets/vendors/jquery/jquery.validate.min.js"></script>
 <script src="assets/vendors/jquery-ui/js/jquery-ui.min.js"></script>
 <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/index.js"></script>

@@ -76,25 +76,9 @@ $('document').ready(function() {
     /**
      * form validation
      */
-
-    let form  = $('form');
-    let email = $('#mail');
-    let error = $('.error');
-
-    $('form button[type="submit"]').on('click', function(event) {
-        $('form').validate();
-
-        if (email.valid()) {
-            error.text('');
-            error.addClass('error');
-        }
-    });
-    $('form').on('submit', function (event) {
-        $('form').validate();
-        if (!email.valid()) {
-            error.text("I expect an e-mail, darling!");
-            error.addClass('error active');
-            event.preventDefault();
+    $('button[type="submit"]').on('click', function(e) {
+        if(!$('form')[0].checkValidity()) {
+            e.preventDefault();
         }
     });
 });

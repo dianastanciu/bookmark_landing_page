@@ -31,56 +31,54 @@
     border: 1px solid transparent;
     margin: 0;
     font-family: inherit;
+    position: relative;
 
-    // When input is...
-    //   1. NOT empty
-    //   2. NOT in focus
-    //   3. NOT valid
     &:invalid:not(:focus):not(:placeholder-shown) {
-      // Show a light reminder
-      background: pink;
-      & + label {
-        opacity: 0;
+      border: 2px solid $color-soft-red;
+      border-bottom: none;
+
+      & ~ .requirement {
+        margin-top: -10px;
+      }
+
+      &::before {
+        content: '\f05a';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        font-size: 1em;
+        color: $color-soft-red;
       }
     }
 
-    // When that invalid input becomes in focus (and also still isn't empty)
-    &:invalid:focus:not(:placeholder-shown) {
-      // Show the more robust requirement instructions below.
-      & ~ .requirements {
-        height: 100%;
-        opacity: 1;
-        visibility: visible;
+    &:valid:not(:focus):not(:placeholder-shown) {
+      border-color: #5fa550;
+
+      & + .requirement {
+        color: #5fa550;
       }
-    }
-
-    &:focus:invalid {
-      outline: none;
-    }
-
-    &:focus + label {
-      opacity: 0;
     }
   }
 
   &__label {
     opacity: 0;
     visibility: hidden;
+    position: absolute;
+    left: -99999px;
+    top: -99999px;
   }
 }
 
-.error {
-  width: 100%;
-  padding: 0;
-  font-size: 80%;
-  color: white;
-  background-color: $color-soft-red;
-  border-radius: 0 0 5px 5px;
-
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-
-  &.active {
-    padding: 0.3em;
-  }
+.requirement {
+  background: $color-soft-red;
+  color: $text-light;
+  margin-top: -40px;
+  text-align: left;
+  font-size: 0.75em;
+  font-style: italic;
+  letter-spacing: .02em;
+  padding: 1em 0.9em 0.4em;
+  border-radius: 0 0 6px 6px;
+  transition: all .5s ease;
 }
