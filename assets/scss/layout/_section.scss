@@ -5,11 +5,14 @@
 }
 
 .contact {
-  background: $color-soft-blue;
   margin: 0 -15px;
   padding: 3em 1.5em;
   color: $text-light;
   text-align: center;
+  background: $color-soft-blue;
+
+  &__inner {
+  }
 
   .bk__subtitle {
     text-transform: uppercase;

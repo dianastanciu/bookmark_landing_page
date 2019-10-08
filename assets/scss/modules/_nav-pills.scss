@@ -5,13 +5,22 @@
     margin: 50px 15px;
     text-align: center;
     padding-bottom: 40px;
-    
+
+    @include min($md-width) {
+      flex-direction: row;
+      justify-content: center;
+    }
+
     .nav-link {
       border-bottom: .05em solid rgba(0,0,0,.2);
       border-radius: 0;
-      padding: 20px 0;
+      padding: 1em 0;
       color: rgba(0,0,0,.5);
       transition: all .5s ease;
+
+      @include min($md-width) {
+        padding: 1em 2em;
+      }
     }
 
     .nav-link.active {
@@ -28,15 +37,42 @@
         left: 50%;
         bottom: -1px;
         transform: translateX(-50%);
+
+        @include min($md-width) {
+          width: 100%;
+        }
       }
     }
 
-    .tab-pane {
+    + .tab-content .tab-pane {
       padding-top: 40px;
+    }
+
+    + .tab-content .row {
+      display: flex !important;
+    }
+
+    + .tab-content .bk__subtitle {
+      @include min($md-width) {
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 1.5em;
+        width: 80%;
+      }
+    }
+
+    + .tab-content .bk__title {
+      @include min($md-width) {
+        text-align: left;
+      }
     }
 
     .nav-item:first-of-type .nav-link {
       border-top: .05em solid rgba(0,0,0,.2);
+
+      @include min($md-width) {
+        border-top: 0;
+      }
     }
   }
 

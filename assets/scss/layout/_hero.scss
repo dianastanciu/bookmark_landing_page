@@ -1,12 +1,25 @@
 .hero {
-  margin-top: 50px;
+  margin-top: 4em;
+
+  @include min($md-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
   &__img {
     position: relative;
     margin-bottom: 3em;
-    
+
+    @include min($md-width) {
+      flex: 1;
+    }
+
     img {
       width: 100%;
+
+      @include min($md-width) {
+        width: 110%;
+      }
     }
 
     &::after {
@@ -14,11 +27,44 @@
       position: absolute;
       width: 90%;
       height: 80%;
+      max-height: 200px;
       background: $color-soft-blue;
       top: 25%;
       right: -20%;
       border-bottom-left-radius: 35%;
       z-index: -1;
+    }
+  }
+
+  &__info {
+    @include min($md-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
+    }
+
+    .bk__title {
+      @include min($md-width) {
+        font-size: 3em;
+        text-align: left;
+        margin: 1em 0 .5em;
+      }
+    }
+
+    .bk__subtitle {
+      @include min($md-width) {
+        margin-left: 0;
+        text-align: left;
+        font-size: 1em;
+        width: 90%;
+      }
+    }
+
+    .bk__button {
+      @include min($md-width) {
+        margin-right: 1.2em;
+      }
     }
   }
 }

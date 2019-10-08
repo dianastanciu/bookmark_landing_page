@@ -4,6 +4,7 @@
     text-align: center;
     border-radius: 6px;
     font-family: 'Rubik', sans-serif;
+    display: inline-block;
 
     @include hover() {
       color: inherit;

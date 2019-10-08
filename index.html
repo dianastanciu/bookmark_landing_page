@@ -28,8 +28,8 @@
     <title>Bookmark Landing Page</title>
 </head>
 <body>
-<div class="container">
-    <header class="header">
+<div class="container-fluid">
+    <header class="header container">
         <a href="/" tabindex="1" class="header__logo">
             <img src="https://res.cloudinary.com/dianastanciu/image/upload/v1570482274/logo-bookmark_xiva21.svg" alt="Bookmark Logo" class="svg">
         </a>
@@ -55,24 +55,27 @@
     </header>
 
     <main>
-        <div class="hero">
+        <div class="hero container">
             <div class="hero__img">
                 <img src="assets/img/illustration-hero.svg" alt="Bookmark Hero Image">
             </div>
 
-            <h1 class="bk__title">A Simple Bookmark Manager</h1>
+            <div class="hero__info">
+                <h1 class="bk__title">A Simple Bookmark Manager</h1>
 
-            <div class="bk__subtitle">
-                A clean and simple interface to organize your favourite websites. Open a new
-                browser tab and see your sites load instantly. Try it for free.
-            </div>
+                <div class="bk__subtitle">
+                    A clean and simple interface to organize your favourite websites. Open a new
+                    browser tab and see your sites load instantly. Try it for free.
+                </div>
 
-            <div class="bk__cta">
-                <a href="#" class="bk__button bk__button--default bk__button--emphasized">Get it on Chrome</a>
-                <a href="#" class="bk__button bk__button--default">Get it on Firefox</a>
+                <div class="bk__cta">
+                    <a href="#" class="bk__button bk__button--default bk__button--emphasized">Get it on Chrome</a>
+                    <a href="#" class="bk__button bk__button--default">Get it on Firefox</a>
+                </div>
             </div>
         </div>
 
+        <!--features-->
         <div class="bk__section">
             <h2 class="bk__title">Features</h2>
             <div class="bk__subtitle">Our aim is to make it quick and easy for you to access your favourite websites.
@@ -99,79 +102,106 @@
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
-                <div class="row tab-pane fade show active" id="pills-bookmarking" role="tabpanel" aria-labelledby="pills-bookmarking-tab">
-                    <div class="col-sm-6">
-                        <div class="bk__shadowed bk__shadowed--reverse">
-                            <img src="assets/img/illustration-features-tab-1.svg" alt="bookmarking image">
+                <div class="tab-pane fade show active" id="pills-bookmarking" role="tabpanel" aria-labelledby="pills-bookmarking-tab">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="bk__shadowed bk__shadowed--reverse">
+                                <img src="assets/img/illustration-features-tab-1.svg" alt="bookmarking image">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h2 class="bk__title">Bookmark in one click</h2>
-                        <div class="bk__subtitle">Organize your bookmarks however you like. Our simple drag-and-drop interface
-                            gives you complete control over how you manage your favourite sites.</div>
+                        <div class="col-sm-6">
+                            <h2 class="bk__title">Bookmark in one click</h2>
+                            <div class="bk__subtitle">Organize your bookmarks however you like. Our simple drag-and-drop interface
+                                gives you complete control over how you manage your favourite sites.</div>
+                            <div class="text-left">
+                                <a href="#" class="bk__button bk__button--default bk__button--emphasized bk__button--single">More Info</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-searching" role="tabpanel" aria-labelledby="pills-searching-tab">
-                    <div class="col-sm-6">
-                        <div class="bk__shadowed bk__shadowed--reverse">
-                            <img src="assets/img/illustration-features-tab-2.svg" alt="searching image">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="bk__shadowed bk__shadowed--reverse">
+                                <img src="assets/img/illustration-features-tab-2.svg" alt="searching image">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h2 class="bk__title">Intelligent Search</h2>
-                        <div class="bk__subtitle">
-                            Our powerful search feature will help you find saved sites in no time at all.
-                            No need to trawl through all of your bookmarks.
+                        <div class="col-md-6">
+                            <h2 class="bk__title">Intelligent Search</h2>
+                            <div class="bk__subtitle">
+                                Our powerful search feature will help you find saved sites in no time at all.
+                                No need to trawl through all of your bookmarks.
+                            </div>
+                            <div class="text-left">
+                                <a href="#" class="bk__button bk__button--default bk__button--emphasized bk__button--single">More Info</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-sharing" role="tabpanel" aria-labelledby="pills-sharing-tab">
-                    <div class="col-sm-6">
-                        <div class="bk__shadowed bk__shadowed--reverse">
-                            <img src="assets/img/illustration-features-tab-3.svg" alt="sharing image">
+                   <div class="row">
+                       <div class="col-md-6">
+                           <div class="bk__shadowed bk__shadowed--reverse">
+                               <img src="assets/img/illustration-features-tab-3.svg" alt="sharing image">
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <h2 class="bk__title">Share your bookmarks</h2>
+                           <div class="bk__subtitle">
+                               Easily share your bookmarks and collections with others. Create a shareable
+                               link that you can send at the click of a button.
+                           </div>
+                           <div class="text-left">
+                               <a href="#" class="bk__button bk__button--default bk__button--emphasized bk__button--single">More Info</a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!--download-->
+        <div class="bk__section">
+            <div class="container">
+                <h2 class="bk__title">Download the extension</h2>
+                <div class="bk__subtitle">We’ve got more browsers in the pipeline. Please do let us know if you’ve
+                    got a favourite you’d like us to prioritize.</div>
+
+                <div class="row bk__stairs">
+                    <div class="col-md-4">
+                        <div class="bk__card">
+                            <img src="assets/img/logo-chrome.svg" alt="Chrome logo" class="bk__img">
+                            <h2 class="bk__title">Add to Chrome</h2>
+                            <div class="bk__subtitle">Minimum Version 62</div>
+                            <div class="bk__separator"></div>
+                            <a href="#" class="bk__button bk__button--default bk__button--emphasized">Add & Install Extension</a>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <h2 class="bk__title">Share your bookmarks</h2>
-                        <div class="bk__subtitle">
-                            Easily share your bookmarks and collections with others. Create a shareable
-                            link that you can send at the click of a button.
+
+                    <div class="col-md-4">
+                        <div class="bk__card">
+                            <img src="assets/img/logo-firefox.svg" alt="Firefox logo" class="bk__img">
+                            <h2 class="bk__title">Add to Firefox</h2>
+                            <div class="bk__subtitle">Minimum Version 55</div>
+                            <div class="bk__separator"></div>
+                            <a href="#" class="bk__button bk__button--default bk__button--emphasized">Add & Install Extension</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="bk__card">
+                            <img src="assets/img/logo-opera.svg" alt="Opera logo" class="bk__img">
+                            <h2 class="bk__title">Add to Opera</h2>
+                            <div class="bk__subtitle">Minimum Version 46</div>
+                            <div class="bk__separator"></div>
+                            <a href="#" class="bk__button bk__button--default bk__button--emphasized">Add & Install Extension</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="bk__section">
-            <h2 class="bk__title">Download the extension</h2>
-            <div class="bk__subtitle">We’ve got more browsers in the pipeline. Please do let us know if you’ve
-                got a favourite you’d like us to prioritize.</div>
-            
-            <div class="bk__card">
-                <img src="assets/img/logo-chrome.svg" alt="Chrome logo" class="bk__img">
-                <h2 class="bk__title">Add to Chrome</h2>
-                <div class="bk__subtitle">Minimum Version 62</div>
-                <div class="bk__separator"></div>
-                <a href="#" class="bk__button bk__button--default bk__button--emphasized">Add & Install Extension</a>
-            </div>
-
-            <div class="bk__card">
-                <img src="assets/img/logo-firefox.svg" alt="Firefox logo" class="bk__img">
-                <h2 class="bk__title">Add to Firefox</h2>
-                <div class="bk__subtitle">Minimum Version 55</div>
-                <div class="bk__separator"></div>
-                <a href="#" class="bk__button bk__button--default bk__button--emphasized">Add & Install Extension</a>
-            </div>
-
-            <div class="bk__card">
-                <img src="assets/img/logo-opera.svg" alt="Opera logo" class="bk__img">
-                <h2 class="bk__title">Add to Opera</h2>
-                <div class="bk__subtitle">Minimum Version 46</div>
-                <div class="bk__separator"></div>
-                <a href="#" class="bk__button bk__button--default bk__button--emphasized">Add & Install Extension</a>
-            </div>
-        </div>
-
+        <!--faq-->
         <div class="bk__section">
             <h2 class="bk__title">Frequently asked questions</h2>
             <div class="bk__subtitle">Here are some of our FAQs. If you have any other questions you’d like
@@ -211,32 +241,36 @@
             </div>
         </div>
 
-        <div class="bk__section mb-0">
-            <div class="contact">
-                <div class="bk__subtitle">35,000+ already joined</div>
+        <!--newsletter-->
+        <div class="bk__section mb-0 contact">
+            <div class="container ">
+                <div class="contact__inner">
+                    <div class="bk__subtitle">35,000+ already joined</div>
+                    <h2 class="bk__title">Stay up-to-date with what we’re doing</h2>
+                    <form novalidate>
 
-                <h2 class="bk__title">Stay up-to-date with what we’re doing</h2>
 
-                <form novalidate>
-                    <div class="bk__form-group">
-                        <input type="email" required
-                               data-value-missing="This field is required!"
-                               placeholder="Enter your e-mail address"
-                               autocomplete="off"
-                               id="mail"
-                               class="bk__input">
-                        <label for="mail" class="bk__label"></label>
-                        <div class="requirement requirement--error">Whoops, make sure it's an e-mail!</div>
-                    </div>
-                    <button type="submit" class="btn bk__button bk__button--red">Contact Us</button>
-                    <span class="error" aria-live="polite"></span>
-                </form>
+
+                        <div class="bk__form-group">
+                            <input type="email" required
+                                   data-value-missing="This field is required!"
+                                   placeholder="Enter your e-mail address"
+                                   autocomplete="off"
+                                   id="mail"
+                                   class="bk__input">
+                            <label for="mail" class="bk__label"></label>
+                            <div class="requirement requirement--error">Whoops, make sure it's an e-mail!</div>
+                        </div>
+                        <button type="submit" class="btn bk__button bk__button--red">Contact Us</button>
+                        <span class="error" aria-live="polite"></span>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="footer__inner">
+        <div class="container footer__inner">
             <div class="footer__logo">
                 <img src="https://res.cloudinary.com/dianastanciu/image/upload/v1570482274/logo-bookmark_xiva21.svg" alt="Bookmark Logo" class="svg">
             </div>
@@ -248,9 +282,9 @@
                 </ul>
             </div>
             <div class="footer__social">
-                <a href="#" class="footer__item footer__social_item"><i class="fab fa-facebook-square fa-2x"></i></a>
-                <a href="#" class="footer__item footer__social_item"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
+                    <a href="#" class="footer__item footer__social_item"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#" class="footer__item footer__social_item"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
         </div>
     </footer>
 </div>
