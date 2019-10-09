@@ -1,0 +1,50 @@
+$stairsHeight: 3em;
+
+.bk {
+  &__card {
+    margin: 2em 10%;
+    border-radius: 30px;
+    box-shadow: 1px 11px 14px 0 rgba(0,0,0,0.1);
+    padding: 20px 30px 40px;
+
+    @include min($md-width) {
+      max-width: 17em;
+    }
+
+    .bk__img {
+      width: 100px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .bk__button {
+      display: block;
+    }
+
+    .bk__title {
+      margin-bottom: 0.5em;
+      font-size: 1.2em;
+    }
+  }
+
+  &__stairs {
+    @include min($md-width) {
+      > :nth-of-type(2) {
+        margin-top: $stairsHeight;
+      }
+
+      > :last-of-type {
+        margin-top: calc(#{$stairsHeight} * 2);
+      }
+    }
+  }
+
+  &__separator {
+    margin: 35px -30px 45px;
+    min-height: 3px;
+    background-image: linear-gradient(to right, rgba(0,0,0,.2) 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: top;
+    background-size: 25px 3px;
+    background-repeat: repeat-x;
+  }
+}

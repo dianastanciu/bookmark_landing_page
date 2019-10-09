@@ -1,0 +1,109 @@
+form {
+  @include min($md-width) {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @include min-max($md-width, $lg-width) {
+    width: 60%;
+  }
+
+  button {
+    @include min($md-width) {
+      flex: 1;
+      margin-left: 20px;
+      height: 57px;
+    }
+  }
+}
+
+.bk {
+  &__form-group {
+    position: relative;
+    margin-bottom: 1em;
+
+    @include min($md-width) {
+      flex: 2;
+      margin-bottom: 0;
+    }
+
+    .requirements {
+      background: $color-soft-red;
+      text-align: left;
+      padding: 3px 10px;
+      border-radius: 0 0 6px 6px;
+      font-size: 0.7em;
+      color: #fff;
+      letter-spacing: .05em;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border-radius: 6px;
+    padding: 1em;
+    font-size: 0.9em;
+    color: $color-grayish-blue;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    margin: 0;
+    font-family: inherit;
+    position: relative;
+
+    &:invalid:not(:focus):not(:placeholder-shown) {
+      border: 2px solid $color-soft-red;
+      border-bottom: none;
+
+      & ~ .requirement {
+        margin-top: -10px;
+      }
+
+      &::before {
+        content: '\f05a';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        font-size: 1em;
+        color: $color-soft-red;
+      }
+    }
+
+    &:valid:not(:focus):not(:placeholder-shown) {
+      border-color: #5fa550;
+
+      & + .requirement {
+        color: #5fa550;
+      }
+    }
+  }
+
+  &__label {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -99999px;
+    top: -99999px;
+  }
+}
+
+.requirement {
+  background: $color-soft-red;
+  color: $text-light;
+  margin-top: -40px;
+  text-align: left;
+  font-size: 0.75em;
+  font-style: italic;
+  letter-spacing: .02em;
+  padding: 1em 0.9em 0.4em;
+  border-radius: 0 0 6px 6px;
+  transition: all .5s ease;
+}

@@ -1,0 +1,26 @@
+.bk {
+    &__title {
+        margin: 1em 0;
+        font-weight: 500;
+        font-size: 1.4em;
+        text-align: center;
+
+        @include min($md-width) {
+            font-size: 2em;
+        }
+    }
+    
+    &__subtitle {
+        font-size: 0.85em;
+        line-height: 1.7;
+        color: #B4B5B9;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+
+        @include min($md-width) {
+            font-size: 1em;
+            width: 50%;
+        }
+    }
+}

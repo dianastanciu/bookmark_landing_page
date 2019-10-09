@@ -1,0 +1,26 @@
+// hover
+@mixin hover() {
+  &:focus,
+  &:hover {
+      @content;
+  }
+}
+
+//responsive screen
+@mixin max($width) {
+  @media (max-width: $width - 1) {
+      @content;
+  }
+}
+
+@mixin min($width) {
+  @media (min-width: $width) {
+      @content;
+  }
+}
+
+@mixin min-max($min-width, $max-width) {
+  @media (min-width: $min-width) and (max-width: $max-width - 1) {
+      @content
+  }
+}

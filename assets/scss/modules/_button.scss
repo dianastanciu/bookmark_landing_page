@@ -1,0 +1,50 @@
+.bk {
+  &__button {
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 6px;
+    font-family: 'Rubik', sans-serif;
+    display: inline-block;
+
+    @include hover() {
+      color: inherit;
+    }
+
+    &--bordered {
+      border: 2px solid #fff;
+      margin-top: 20px;
+    }
+  
+    &--default {
+      border: 0;
+      padding: 1em 2em;
+      font-weight: 400;
+      font-size: .8em;
+      color: $color-dark-blue;
+      background: #F7F7F7;
+      box-shadow: 0px 3px 6px 1px rgba(0,0,0,.15);
+    }
+
+    &--emphasized {
+      background: $color-soft-blue;
+      color: #fff;
+
+      @include hover() {
+        color: $text-light;
+      }
+    }
+
+    &--red {
+      background: $color-soft-red;
+      color: #fff;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+  }
+}

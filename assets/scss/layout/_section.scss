@@ -1,0 +1,44 @@
+.bk {
+  &__section {
+    margin: 6em 0;
+  }
+}
+
+.contact {
+  margin: 0 -15px;
+  padding: 3em 1.5em;
+  color: $text-light;
+  text-align: center;
+  background: $color-soft-blue;
+
+  &__inner {
+  }
+
+  .bk__subtitle {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.2em;
+  }
+
+  .bk__title {
+    margin-bottom: 1em;
+    margin-top: 0.3em;
+
+    @include min($md-width) {
+      width: 50%;
+      margin: 0 auto 1em;
+    }
+
+    @include min-max($md-width, $lg-width) {
+      width: 60%;
+    }
+  }
+}
+
+.features {
+  .bk__subtitle {
+    @include min($md-width) {
+      width: 40%;
+    }
+  }
+}

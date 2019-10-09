@@ -1,0 +1,73 @@
+.footer {
+  margin: 0 -15px;
+  background: $color-dark-blue;
+
+  &__inner {
+    color: $text-light;
+    text-align: center;
+    padding: 7%;
+
+    @include min($md-width) {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__nav {
+    padding: 1em 0;
+    font-size: 0.9em;
+
+    @include min($md-width) {
+      flex: 4;
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+      }
+    }
+  }
+
+  &__nav_item {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+  }
+
+  &__item {
+    padding: .9em 1.5em;
+
+    @include min($md-width) {
+      font-size: .8em;
+    }
+  }
+
+  &__logo {
+    @include min($md-width) {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      height: 1.6em;
+    }
+
+    path {
+      fill: $text-light;
+    }
+  }
+
+  &__social {
+    @include min($md-width) {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
