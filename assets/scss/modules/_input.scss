@@ -1,7 +1,32 @@
+form {
+  @include min($md-width) {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @include min-max($md-width, $lg-width) {
+    width: 60%;
+  }
+
+  button {
+    @include min($md-width) {
+      flex: 1;
+      margin-left: 20px;
+      height: 57px;
+    }
+  }
+}
+
 .bk {
   &__form-group {
     position: relative;
     margin-bottom: 1em;
+
+    @include min($md-width) {
+      flex: 2;
+      margin-bottom: 0;
+    }
 
     .requirements {
       background: $color-soft-red;

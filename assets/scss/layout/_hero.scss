@@ -33,6 +33,18 @@
       right: -20%;
       border-bottom-left-radius: 35%;
       z-index: -1;
+
+      @include min($lg-width) {
+        height: 60%;
+        background: #5368df;
+        top: 45%;
+        max-height: 400px;
+      }
+
+      @include min-max($sm-width, $lg-width) {
+        top: 25%;
+        max-height: 200px;
+      }
     }
   }
 
