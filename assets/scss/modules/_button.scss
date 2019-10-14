@@ -5,13 +5,17 @@
     border-radius: 6px;
     font-family: 'Rubik', sans-serif;
     display: inline-block;
+    
+    &.bk__button--emphasized {
+      color: $text-light;
+    }
 
     @include hover() {
       color: inherit;
     }
 
     &--bordered {
-      border: 2px solid #fff;
+      border: 2px solid $text-light;
       margin-top: 20px;
     }
   
@@ -27,16 +31,23 @@
 
     &--emphasized {
       background: $color-soft-blue;
-      color: #fff;
+      color: $text-light;
 
       @include hover() {
         color: $text-light;
       }
     }
 
+    &--single {
+      @include max($md-width) {
+        display: table;
+        margin: 20px auto;
+      }
+    }
+
     &--red {
       background: $color-soft-red;
-      color: #fff;
+      color: $text-light;
       display: block;
       width: 100%;
     }
